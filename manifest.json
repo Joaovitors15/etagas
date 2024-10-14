@@ -48,10 +48,10 @@
         }   
         
     ],
-    "screenshot":[
+    "screenshots":[
         {
             "src": "./img/screenshot1.png",
-            "sizes": "376x652",
+            "sizes": "367x652",
             "type": "image/png",
             "form_factor": "narrow"
         },
