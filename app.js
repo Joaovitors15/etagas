@@ -4,6 +4,22 @@
  * @link https://github.com/Joaovitors15/etagas.git
  */
 
+
+// Registrar o service Worker >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ // se o Service Worker tiver disponivel no Navegador
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+    .register('/sw.js')
+    .then(() => {
+        console.log("service Worker registrado.")
+    })
+
+ }
+
+
+
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 function calcular() {
     // pegar valores dos inputs
     let gasolina = Number(document.getElementById('gasolina').value)
